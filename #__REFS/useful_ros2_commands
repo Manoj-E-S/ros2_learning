@@ -41,12 +41,17 @@ ________________________________________________________________________________
 |	   -> package.xml	-- used when adding and updating dependencies, version, etc.								|
 |	   -> CMakeLists.txt	-- used to add the following:												|
 |				   # Create executable for workspace/install										|
-|				   add_executable(cpp_node src/my_first_node.cpp)									|
-|				   ament_target_dependencies(cpp_node rclcpp)										|
+|				   add_executable(<executable1_name> src/<node1_file_name>.cpp)								|
+|				   ament_target_dependencies(<executable1_name> rclcpp [list of all space-seperated dependencies])			|
+|				   															|
+|				   add_executable(<executable2_name> src/<node2_file_name>.cpp)								|
+|				   ament_target_dependencies(<executable2_name> rclcpp [list of all space-seperated dependencies])			|
 |																			|
 |				   # Install executable in workspace/install										|
 |				   install(														|
-|				     TARGETS cpp_node													|
+|				     TARGETS 														|
+|					<executable1_name>												|
+|					<executable2_name>												|
 |				     DESTINATION lib/${PROJECT_NAME}											|
 |				   )															|
 |	   -> src		-- all node_files are stored here											|
@@ -74,6 +79,15 @@ ________________________________________________________________________________
 
 6. To Debug use graphical interface by rqt:
    -> rqt (OR) rqt_graph : shows a list of all active nodes, and related topics they are interacting with
+
+
+
+
+
+
+
+
+
 
 
 

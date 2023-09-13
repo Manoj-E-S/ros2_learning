@@ -16,6 +16,7 @@ class MyNode(Node):
         self.__counter += 1
         self.get_logger().info(f'Hello: {self.__counter}')
 
+
 def main(args=None):
     rclpy.init(args=args)
 
@@ -23,6 +24,7 @@ def main(args=None):
     rclpy.spin(node)
 
     rclpy.shutdown()
+
 
 if __name__ == '__main__':
     main()

@@ -8,14 +8,27 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
+find_package(example_interfaces REQUIRED)
 
 # Create executable for workspace/install
+# cpp_node
 add_executable(cpp_node src/my_first_node.cpp)
 ament_target_dependencies(cpp_node rclcpp)
 
+# robot_news_station
+add_executable(robot_news_station src/robot_news_station.cpp)
+ament_target_dependencies(robot_news_station rclcpp example_interfaces)
+
+# smartphone
+add_executable(smartphone src/smartphone.cpp)
+ament_target_dependencies(smartphone rclcpp example_interfaces)
+
 # Install executable in workspace/install
 install(
-  TARGETS cpp_node
+  TARGETS 
+    cpp_node
+    robot_news_station
+    smartphone
   DESTINATION lib/${PROJECT_NAME}
 )
 
