@@ -1,0 +1,87 @@
+
+_________________________________________________________________________________________________________________________________________________________
+| NOTE: 																		|
+|	To be able to use ros2 global commands and packages			: `source /opt/ros/humble/setup.bash`					|
+|	To be able to use ros2 global and local(to a ws) commands and packages	: `source ~/ros2_ws/install/setup.bash`					|
+|	To enable autocomplete on colcon commands				: `source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash`	|
+|																			|
+|	Add these lines to ~/.bashrc to aoutomattically run them on the launch of a new terminal session						| 
+|_______________________________________________________________________________________________________________________________________________________|
+
+1. To create a workspace:
+   -> mkdir <ws_name> 			: (Eg) mkdir ros2_ws
+   -> cd <ws_name> && mkdir src 	: (Eg) cd ros2_ws && mkdir src
+   -> colcon build 			: BUILDS THE WS with install, log, and build directories
+      -> install	: to store details about packages created in src directory of <ws_name> and access them using `ros2 run`
+      -> log		: all log files
+      -> src		: all user-made packages are present here
+      -> build		: all build files are here
+
+
+2. To create a package in <ws_name>/src:
+   -> ros2 pkg create --build-type ament_cmake --dependencies rclcpp <package_name> : (For C++)
+   -> ros2 pkg create --build-type ament_python --dependencies rclpy <package_name> : (For Python)
+   
+_________________________________________________________________________________________________________________________________________________________
+| NOTE: Important files in <package_name> directory													|
+|	-> For python:																	|
+|	   -> package.xml 	-- used when adding and updating dependencies, version, etc.								|
+|	   -> setup.py	  	-- used when adding and updating dependencies, version, etc.								|
+|			  	-- used to add the following:												|
+|				   entry_points={													|
+|        				'console_scripts': [												|
+|            					'<executable_name> = <package_name>.<node_file_name>:<entry_point_function>'				|
+|        				],														|
+|    				   },															|
+|	   -> setup.cfg   	-- used to mention the path where executables runnable by `ros2 run` are placed						|
+|	   -> <package_name>	-- the python package (containing __init__.py)										|
+|				-- all node_files are stored here											|
+|	________________________________________________________________________________________________________________________________________________|
+|	-> For C++:																	|
+|	   -> package.xml	-- used when adding and updating dependencies, version, etc.								|
+|	   -> CMakeLists.txt	-- used to add the following:												|
+|				   # Create executable for workspace/install										|
+|				   add_executable(cpp_node src/my_first_node.cpp)									|
+|				   ament_target_dependencies(cpp_node rclcpp)										|
+|																			|
+|				   # Install executable in workspace/install										|
+|				   install(														|
+|				     TARGETS cpp_node													|
+|				     DESTINATION lib/${PROJECT_NAME}											|
+|				   )															|
+|	   -> src		-- all node_files are stored here											|
+|_______________________________________________________________________________________________________________________________________________________|
+
+
+3. To compile and build for c++ and build for python (also installs the executable at ws_name/install/package_name/lib/package_name):
+   [At the root of the ws ie. in <ws_name>]
+   -> colcon build --packages-select <package_name>			: builds <package_name> (should be run after any change in <package_name> directory, before `ros2 run`)
+   **-> colcon build --packages-select <package_name> --symlink-install	: builds <package_name> (to be run only once, then `ros2 run` can be directly invoked)
+
+	**works only with python as it does not require compiling.
+	**each <node_file_name> should be made executable using `chmod +x <node_file_name>.py` for this to work
+
+
+4. To run the installed executable as node:
+   -> ros2 run <package_name> <executable_name> [--ros-args --remap __node:=<node_name>]
+   	(--ros-args and later part is optional. This is to give the node a new name different from the one defined in the <node_file_name>.extension. Also --remap == -r)
+
+
+5. To see nodes(executables) running:
+   -> ros2 node list
+   -> ros2 node info /<node_name>
+
+
+6. To Debug use graphical interface by rqt:
+   -> rqt (OR) rqt_graph : shows a list of all active nodes, and related topics they are interacting with
+
+
+
+
+
+
+
+
+
+
+
