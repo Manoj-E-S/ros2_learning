@@ -1,0 +1,19 @@
+[0.544s] Invoking command in '/home/manoj/ros2_ws/build/my_py_pkg': PYTHONPATH=/home/manoj/ros2_ws/build/my_py_pkg/prefix_override:/home/manoj/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/manoj/ros2_ws/build/my_py_pkg/build --no-deps install_data
+[0.758s] running develop
+[0.896s] running egg_info
+[0.896s] writing my_py_pkg.egg-info/PKG-INFO
+[0.896s] writing dependency_links to my_py_pkg.egg-info/dependency_links.txt
+[0.896s] writing entry points to my_py_pkg.egg-info/entry_points.txt
+[0.897s] writing requirements to my_py_pkg.egg-info/requires.txt
+[0.897s] writing top-level names to my_py_pkg.egg-info/top_level.txt
+[0.898s] reading manifest file 'my_py_pkg.egg-info/SOURCES.txt'
+[0.898s] writing manifest file 'my_py_pkg.egg-info/SOURCES.txt'
+[0.899s] running build_ext
+[0.900s] Creating /home/manoj/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my-py-pkg.egg-link (link to .)
+[0.900s] Installing py_node script to /home/manoj/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.900s] Installing robot_news_station script to /home/manoj/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.901s] Installing robot_news_subscriber = my_py_pkg.robot_news_subscriber:mainnumber_publisher script to /home/manoj/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.901s] 
+[0.901s] Installed /home/manoj/ros2_ws/build/my_py_pkg
+[0.901s] running install_data
+[0.938s] Invoked command in '/home/manoj/ros2_ws/build/my_py_pkg' returned '0': PYTHONPATH=/home/manoj/ros2_ws/build/my_py_pkg/prefix_override:/home/manoj/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/manoj/ros2_ws/build/my_py_pkg/build --no-deps install_data

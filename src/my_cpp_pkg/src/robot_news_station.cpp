@@ -12,7 +12,7 @@ class SmartphoneNode : public rclcpp::Node
         {
             auto msg = example_interfaces::msg::String();
             msg.data = std::string("Hi, this is ") + this->robot_name + std::string(" from the robot news station");
-            publisher->publish(msg);
+            this->publisher->publish(msg);
         }
 
     public:

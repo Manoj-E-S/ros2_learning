@@ -8,8 +8,10 @@ setup.py
 ../../build/my_py_pkg/my_py_pkg.egg-info/requires.txt
 ../../build/my_py_pkg/my_py_pkg.egg-info/top_level.txt
 ../../build/my_py_pkg/my_py_pkg.egg-info/zip-safe
+my_py_pkg/ROS_TEMPLATE.py
 my_py_pkg/__init__.py
 my_py_pkg/my_first_node.py
+my_py_pkg/number_publisher.py
 my_py_pkg/robot_news_station.py
 my_py_pkg/robot_news_subscriber.py
 my_py_pkg.egg-info/PKG-INFO
