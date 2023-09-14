@@ -12,8 +12,6 @@ from example_interfaces.srv import AddTwoInts
  
 class AddTwoIntsClientNode(Node):
 
-    # PUBLIC METHODS:
-
     def __init__(self):
         super().__init__("add_two_ints_client")
 
@@ -23,9 +21,6 @@ class AddTwoIntsClientNode(Node):
         request.b = 33
         self.__callservice_add_two_ints(request)
 
-
-
-    # PRIVATE METHODS:
 
     def __callservice_add_two_ints(self, request: AddTwoInts.Request) -> None:
 
