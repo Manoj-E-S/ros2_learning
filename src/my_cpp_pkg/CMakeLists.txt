@@ -26,7 +26,7 @@ ament_target_dependencies(smartphone rclcpp example_interfaces)
 
 # number_counter
 add_executable(number_counter src/number_counter.cpp)
-ament_target_dependencies(number_counter rclcpp std_msgs)
+ament_target_dependencies(number_counter rclcpp std_msgs example_interfaces)
 
 # add_two_ints_server
 add_executable(add_two_ints_server src/add_two_ints_server.cpp)

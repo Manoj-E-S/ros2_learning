@@ -1,6 +1,10 @@
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/int64.hpp"
- 
+#include "example_interfaces/srv/set_bool.hpp"
+
+using std::placeholders::_1;
+using std::placeholders::_2;
+
 class AddTwoIntsServerNode : public rclcpp::Node
 {
     public:
@@ -9,10 +13,14 @@ class AddTwoIntsServerNode : public rclcpp::Node
             this->subscriber_ = this->create_subscription<std_msgs::msg::Int64>(
                                     "number", 
                                     10, 
-                                    std::bind(&AddTwoIntsServerNode::callbackSubscribed, this, std::placeholders::_1)
+                                    std::bind(&AddTwoIntsServerNode::subscriberCallback_number, this, std::placeholders::_1)
                                 );
 
             this->publisher_ = this->create_publisher<std_msgs::msg::Int64>("number_count", 10);
+            this->reset_counter_server_ = this->create_service<example_interfaces::srv::SetBool>(
+                                            "reset_number_count", 
+                                            std::bind(&AddTwoIntsServerNode::serviceCallback_reset_number_count, this, _1, _2)
+                                        );
 
             RCLCPP_INFO(this->get_logger(), "Number Counter Initialized.");
         }
@@ -20,13 +28,30 @@ class AddTwoIntsServerNode : public rclcpp::Node
     private:
         rclcpp::Publisher<std_msgs::msg::Int64>::SharedPtr publisher_;
         rclcpp::Subscription<std_msgs::msg::Int64>::SharedPtr subscriber_;
+        rclcpp::Service<example_interfaces::srv::SetBool>::SharedPtr reset_counter_server_;
         int counter_;
 
-        void callbackSubscribed(std_msgs::msg::Int64 msg)
+        void serviceCallback_reset_number_count(
+            example_interfaces::srv::SetBool::Request::SharedPtr request,
+            example_interfaces::srv::SetBool::Response::SharedPtr response
+        )
         {
-            this->counter_ += static_cast<int>(msg.data);
+            if(request->data == true)
+            {
+                this->counter_ = 0;
+                response->success = true;
+                response->message = "Counter-reset successful";
+                return;
+            }
+            response->success = false;
+            response->message = "Counter Not reset";
+        }
+
+        void subscriberCallback_number(std_msgs::msg::Int64 msg)
+        {
             RCLCPP_INFO(this->get_logger(), "%d", this->counter_);
             this->publishCounter();
+            this->counter_ += static_cast<int>(msg.data);
         }
 
         void publishCounter()
