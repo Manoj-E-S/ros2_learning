@@ -1,0 +1,33 @@
+
+1. Pointer objects in namespace std:
+   -> EXAMPLE	- std::shared_ptr<Type_>, std::unique_ptr<Type_>, etc.
+   -> ABOUT	- These are templated classes with an overloaded `->` operator to access all members of an object of class Type_
+   		- Implement pointer functionalities by restricting some fuctionality of the c-type pointers
+   		- Worth reading about them on the internet
+
+MULTI-THREADING : A form of asyncronous operating	
+2. std::thread objects do not have a copy constructor, ie. threads cannot be copied/shared.
+   -> can be accessed using std::unique_ptr<std::thread>
+   -> ```
+      std::vector<std::thread> threads;
+      auto thread1 = std::thread(&new_thread_callback);
+      threads.push_back(thread1);
+      ```
+      is INVALID
+   -> ```
+      std::vector<std::thread> threads;
+      threads.push_back(std::thread(&new_thread_callback));
+      ```
+      is VALID
+      
+3. Passing functions to functions
+   -> fn1(&fn2);
+   -> fn1(std::bind(&fn2, <param/placeholder-list>));
+   -> fn1(std::bind(&ClassName::fn2, this, <param/placeholder-list>));
+   
+   std::bind example:
+   -> std::bind(&ClassName::function_name, this, param1, param2, ... , paramn, std::placeholders::_1, std::placeholders::_2, ... , std::placeholders::_m);
+   -> Refer to related documentation for further details.
+   
+4. Syntax to delete a default function definition (example: to delete default copy constructor)
+   -> `ClassName(const ClassName&) = delete;`

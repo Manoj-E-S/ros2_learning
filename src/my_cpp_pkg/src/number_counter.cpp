@@ -1,15 +1,15 @@
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/int64.hpp"
  
-class NumberCounter : public rclcpp::Node
+class AddTwoIntsServerNode : public rclcpp::Node
 {
     public:
-        NumberCounter() : Node("number_counter"), counter_(0)
+        AddTwoIntsServerNode() : Node("number_counter"), counter_(0)
         {
             this->subscriber_ = this->create_subscription<std_msgs::msg::Int64>(
                                     "number", 
                                     10, 
-                                    std::bind(&NumberCounter::callbackSubscribed, this, std::placeholders::_1)
+                                    std::bind(&AddTwoIntsServerNode::callbackSubscribed, this, std::placeholders::_1)
                                 );
 
             this->publisher_ = this->create_publisher<std_msgs::msg::Int64>("number_count", 10);
@@ -40,7 +40,7 @@ class NumberCounter : public rclcpp::Node
 int main(int argc, char **argv)
 {
     rclcpp::init(argc, argv);
-    auto node = std::make_shared<NumberCounter>();
+    auto node = std::make_shared<AddTwoIntsServerNode>();
     rclcpp::spin(node);
     rclcpp::shutdown();
     return 0;

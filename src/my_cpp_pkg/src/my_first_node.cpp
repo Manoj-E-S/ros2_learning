@@ -3,8 +3,6 @@
 class MyNode : public rclcpp::Node
 {
 private:
-    // Declare a publisher
-    // rclcpp::Publisher<std_msgs::msg::String>::SharedPtr publisher_;
 
     // Declare a timer
     rclcpp::TimerBase::SharedPtr timer_;
@@ -14,12 +12,6 @@ private:
 
     void timerCallback()
     {
-        // Create a message
-        // auto message = std_msgs::msg::String();
-        // message.data = "Hello, ROS2! " + std::to_string(count_++);
-
-        // Publish the message
-        // publisher_->publish(message);
         this->counter_++;
         RCLCPP_INFO(this->get_logger(), "Hello: %ld", this->counter_);
     }

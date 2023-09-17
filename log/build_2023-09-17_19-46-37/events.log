@@ -1,0 +1,212 @@
+[0.000000] (-) TimerEvent: {}
+[0.000764] (-) JobUnselected: {'identifier': 'my_py_pkg'}
+[0.000841] (my_cpp_pkg) JobQueued: {'identifier': 'my_cpp_pkg', 'dependencies': OrderedDict()}
+[0.001533] (my_cpp_pkg) JobStarted: {'identifier': 'my_cpp_pkg'}
+[0.011432] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'cmake'}
+[0.012261] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'build'}
+[0.012884] (my_cpp_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/manoj/ros2_ws/build/my_cpp_pkg', '--', '-j16', '-l16'], 'cwd': '/home/manoj/ros2_ws/build/my_cpp_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'manoj'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/manoj'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/manoj/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/manoj/.nvm/versions/node/v20.5.0/bin'), ('NVM_INC', '/home/manoj/.nvm/versions/node/v20.5.0/include/node'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge:appmenu-gtk-module'), ('MANAGERPID', '5324'), ('SYSTEMD_EXEC_PID', '5975'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '9030'), ('NVM_DIR', '/home/manoj/.nvm'), ('COLCON_PREFIX_PATH', '/home/manoj/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'manoj'), ('JOURNAL_STREAM', '8:30338'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'manoj'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/manoj/miniconda3/condabin:/home/manoj/.nvm/versions/node/v20.5.0/bin:/opt/ros/humble/bin:/home/manoj/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/manoj-ASUS-TUF-Gaming-A15-FA506IC-FA566IC:@/tmp/.ICE-unix/5760,unix/manoj-ASUS-TUF-Gaming-A15-FA506IC-FA566IC:/tmp/.ICE-unix/5760'), ('INVOCATION_ID', '8742a78428054e95b11b88cb628041ab'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/manoj/ros2_ws/install/my_py_pkg:/home/manoj/ros2_ws/install/my_cpp_pkg:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/manoj/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:532f74fe-606f-4b91-a7da-182fcd7476f7'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/manoj/ros2_ws/build/my_cpp_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/manoj/miniconda3/bin/conda'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/manoj/ros2_ws/build/my_py_pkg:/home/manoj/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/manoj/ros2_ws/install/my_cpp_pkg:/home/manoj/ros2_ws/install/my_py_pkg:/opt/ros/humble')]), 'shell': False}
+[0.048963] (my_cpp_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099634] (-) TimerEvent: {}
+[0.171451] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rclcpp: 16.0.5 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.199793] (-) TimerEvent: {}
+[0.201749] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.204434] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.210471] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.221898] (my_cpp_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.236735] (my_cpp_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.290139] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.291626] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.3 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.299917] (-) TimerEvent: {}
+[0.400284] (-) TimerEvent: {}
+[0.401585] (my_cpp_pkg) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.500429] (-) TimerEvent: {}
+[0.540091] (my_cpp_pkg) StdoutLine: {'line': b'-- Found example_interfaces: 0.9.3 (/opt/ros/humble/share/example_interfaces/cmake)\n'}
+[0.600561] (-) TimerEvent: {}
+[0.661137] (my_cpp_pkg) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.7 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.700708] (-) TimerEvent: {}
+[0.718003] (my_cpp_pkg) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.718401] (my_cpp_pkg) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[0.718617] (my_cpp_pkg) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.718957] (my_cpp_pkg) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.719379] (my_cpp_pkg) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.719603] (my_cpp_pkg) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.719873] (my_cpp_pkg) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.720686] (my_cpp_pkg) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.740263] (my_cpp_pkg) StdoutLine: {'line': b'-- Generating done\n'}
+[0.741690] (my_cpp_pkg) StdoutLine: {'line': b'-- Build files have been written to: /home/manoj/ros2_ws/build/my_cpp_pkg\n'}
+[0.763449] (my_cpp_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target cpp_node\x1b[0m\n'}
+[0.763787] (my_cpp_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robot_news_station\x1b[0m\n'}
+[0.764934] (my_cpp_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target smartphone\x1b[0m\n'}
+[0.765277] (my_cpp_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target number_counter\x1b[0m\n'}
+[0.772778] (my_cpp_pkg) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/add_two_ints_server.dir/src/add_two_ints_server.cpp.o\x1b[0m\n'}
+[0.776838] (my_cpp_pkg) StdoutLine: {'line': b'[ 50%] Built target cpp_node\n'}
+[0.777058] (my_cpp_pkg) StdoutLine: {'line': b'[ 50%] Built target robot_news_station\n'}
+[0.778931] (my_cpp_pkg) StdoutLine: {'line': b'[ 70%] Built target smartphone\n'}
+[0.781076] (my_cpp_pkg) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/number_counter.dir/src/number_counter.cpp.o\x1b[0m\n'}
+[0.800843] (-) TimerEvent: {}
+[0.901212] (-) TimerEvent: {}
+[1.001611] (-) TimerEvent: {}
+[1.102007] (-) TimerEvent: {}
+[1.202390] (-) TimerEvent: {}
+[1.302753] (-) TimerEvent: {}
+[1.403116] (-) TimerEvent: {}
+[1.503495] (-) TimerEvent: {}
+[1.603879] (-) TimerEvent: {}
+[1.704256] (-) TimerEvent: {}
+[1.804865] (-) TimerEvent: {}
+[1.905231] (-) TimerEvent: {}
+[2.005877] (-) TimerEvent: {}
+[2.106250] (-) TimerEvent: {}
+[2.206875] (-) TimerEvent: {}
+[2.307516] (-) TimerEvent: {}
+[2.408176] (-) TimerEvent: {}
+[2.459074] (my_cpp_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[2.459349] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[2.459423] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[2.459488] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.459552] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.459617] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.459682] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.459750] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.459814] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.459879] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.459943] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.460006] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/manoj/ros2_ws/src/my_cpp_pkg/src/add_two_ints_server.cpp:1\x1b[m\x1b[K:\n'}
+[2.460069] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/manoj/ros2_ws/src/my_cpp_pkg/src/add_two_ints_server.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid AddTwoIntsNode::callback_add_two_ints_server(example_interfaces::srv::AddTwoInts_Request_<std::allocator<void> >::SharedPtr, example_interfaces::srv::AddTwoInts_Response_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.460229] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/manoj/ros2_ws/src/my_cpp_pkg/src/add_two_ints_server.cpp:24:45:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%d\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99, but argument 5 has type \xe2\x80\x98\x1b[01m\x1b[Kexample_interfaces::srv::AddTwoInts_Request_<std::allocator<void> >::_a_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.460289] (my_cpp_pkg) StderrLine: {'line': b'   24 |             RCLCPP_INFO(this->get_logger(), \x1b[01;35m\x1b[K"%d + %d = %d"\x1b[m\x1b[K, \x1b[32m\x1b[Krequest->a\x1b[m\x1b[K, request->b, response->sum);\n'}
+[2.460347] (my_cpp_pkg) StderrLine: {'line': b'      |                                             \x1b[01;35m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K  \x1b[32m\x1b[K~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.460398] (my_cpp_pkg) StderrLine: {'line': b'      |                                                                      \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[2.460448] (my_cpp_pkg) StderrLine: {'line': b'      |                                                                      \x1b[32m\x1b[Kexample_interfaces::srv::AddTwoInts_Request_<std::allocator<void> >::_a_type {aka long int}\x1b[m\x1b[K\n'}
+[2.460501] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/manoj/ros2_ws/src/my_cpp_pkg/src/add_two_ints_server.cpp:24:47:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[2.460553] (my_cpp_pkg) StderrLine: {'line': b'   24 |             RCLCPP_INFO(this->get_logger(), "\x1b[01;36m\x1b[K%d\x1b[m\x1b[K + %d = %d", request->a, request->b, response->sum);\n'}
+[2.460605] (my_cpp_pkg) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[2.460656] (my_cpp_pkg) StderrLine: {'line': b'      |                                               \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[2.460709] (my_cpp_pkg) StderrLine: {'line': b'      |                                               \x1b[01;36m\x1b[Kint\x1b[m\x1b[K\n'}
+[2.460765] (my_cpp_pkg) StderrLine: {'line': b'      |                                              \x1b[32m\x1b[K%ld\x1b[m\x1b[K\n'}
+[2.460815] (my_cpp_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[2.460867] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[2.460917] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[2.460969] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.461021] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.461072] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.461123] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.461174] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.461225] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.461278] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.461330] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.461398] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/manoj/ros2_ws/src/my_cpp_pkg/src/add_two_ints_server.cpp:1\x1b[m\x1b[K:\n'}
+[2.461456] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/manoj/ros2_ws/src/my_cpp_pkg/src/add_two_ints_server.cpp:24:45:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%d\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99, but argument 6 has type \xe2\x80\x98\x1b[01m\x1b[Kexample_interfaces::srv::AddTwoInts_Request_<std::allocator<void> >::_b_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.461514] (my_cpp_pkg) StderrLine: {'line': b'   24 |             RCLCPP_INFO(this->get_logger(), \x1b[01;35m\x1b[K"%d + %d = %d"\x1b[m\x1b[K, request->a, \x1b[32m\x1b[Krequest->b\x1b[m\x1b[K, response->sum);\n'}
+[2.461568] (my_cpp_pkg) StderrLine: {'line': b'      |                                             \x1b[01;35m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K              \x1b[32m\x1b[K~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.461620] (my_cpp_pkg) StderrLine: {'line': b'      |                                                                                  \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[2.461672] (my_cpp_pkg) StderrLine: {'line': b'      |                                                                                  \x1b[32m\x1b[Kexample_interfaces::srv::AddTwoInts_Request_<std::allocator<void> >::_b_type {aka long int}\x1b[m\x1b[K\n'}
+[2.461728] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/manoj/ros2_ws/src/my_cpp_pkg/src/add_two_ints_server.cpp:24:52:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[2.461811] (my_cpp_pkg) StderrLine: {'line': b'   24 |             RCLCPP_INFO(this->get_logger(), "%d + \x1b[01;36m\x1b[K%d\x1b[m\x1b[K = %d", request->a, request->b, response->sum);\n'}
+[2.461875] (my_cpp_pkg) StderrLine: {'line': b'      |                                                   \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[2.461929] (my_cpp_pkg) StderrLine: {'line': b'      |                                                    \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[2.461981] (my_cpp_pkg) StderrLine: {'line': b'      |                                                    \x1b[01;36m\x1b[Kint\x1b[m\x1b[K\n'}
+[2.462033] (my_cpp_pkg) StderrLine: {'line': b'      |                                                   \x1b[32m\x1b[K%ld\x1b[m\x1b[K\n'}
+[2.462085] (my_cpp_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[2.462138] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[2.462188] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[2.462240] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.462301] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.462352] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.462407] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.462459] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.462511] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.462569] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.462621] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.462673] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/manoj/ros2_ws/src/my_cpp_pkg/src/add_two_ints_server.cpp:1\x1b[m\x1b[K:\n'}
+[2.462725] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/manoj/ros2_ws/src/my_cpp_pkg/src/add_two_ints_server.cpp:24:45:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%d\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99, but argument 7 has type \xe2\x80\x98\x1b[01m\x1b[Kexample_interfaces::srv::AddTwoInts_Response_<std::allocator<void> >::_sum_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.462788] (my_cpp_pkg) StderrLine: {'line': b'   24 |             RCLCPP_INFO(this->get_logger(), \x1b[01;35m\x1b[K"%d + %d = %d"\x1b[m\x1b[K, request->a, request->b, \x1b[32m\x1b[Kresponse->sum\x1b[m\x1b[K);\n'}
+[2.462841] (my_cpp_pkg) StderrLine: {'line': b'      |                                             \x1b[01;35m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K                          \x1b[32m\x1b[K~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.462893] (my_cpp_pkg) StderrLine: {'line': b'      |                                                                                               \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[2.462944] (my_cpp_pkg) StderrLine: {'line': b'      |                                                                                               \x1b[32m\x1b[Kexample_interfaces::srv::AddTwoInts_Response_<std::allocator<void> >::_sum_type {aka long int}\x1b[m\x1b[K\n'}
+[2.462997] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/manoj/ros2_ws/src/my_cpp_pkg/src/add_two_ints_server.cpp:24:57:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[2.463049] (my_cpp_pkg) StderrLine: {'line': b'   24 |             RCLCPP_INFO(this->get_logger(), "%d + %d = \x1b[01;36m\x1b[K%d\x1b[m\x1b[K", request->a, request->b, response->sum);\n'}
+[2.463111] (my_cpp_pkg) StderrLine: {'line': b'      |                                                        \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[2.463162] (my_cpp_pkg) StderrLine: {'line': b'      |                                                         \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[2.463214] (my_cpp_pkg) StderrLine: {'line': b'      |                                                         \x1b[01;36m\x1b[Kint\x1b[m\x1b[K\n'}
+[2.463265] (my_cpp_pkg) StderrLine: {'line': b'      |                                                        \x1b[32m\x1b[K%ld\x1b[m\x1b[K\n'}
+[2.508278] (-) TimerEvent: {}
+[2.608885] (-) TimerEvent: {}
+[2.709587] (-) TimerEvent: {}
+[2.810116] (-) TimerEvent: {}
+[2.910490] (-) TimerEvent: {}
+[3.010888] (-) TimerEvent: {}
+[3.111251] (-) TimerEvent: {}
+[3.211600] (-) TimerEvent: {}
+[3.290294] (my_cpp_pkg) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking CXX executable add_two_ints_server\x1b[0m\n'}
+[3.311747] (-) TimerEvent: {}
+[3.412127] (-) TimerEvent: {}
+[3.470856] (my_cpp_pkg) StdoutLine: {'line': b'[ 90%] Built target add_two_ints_server\n'}
+[3.512273] (-) TimerEvent: {}
+[3.612678] (-) TimerEvent: {}
+[3.713097] (-) TimerEvent: {}
+[3.813508] (-) TimerEvent: {}
+[3.913926] (-) TimerEvent: {}
+[4.014343] (-) TimerEvent: {}
+[4.114768] (-) TimerEvent: {}
+[4.215190] (-) TimerEvent: {}
+[4.315609] (-) TimerEvent: {}
+[4.416025] (-) TimerEvent: {}
+[4.516443] (-) TimerEvent: {}
+[4.616857] (-) TimerEvent: {}
+[4.717274] (-) TimerEvent: {}
+[4.817707] (-) TimerEvent: {}
+[4.918143] (-) TimerEvent: {}
+[5.018583] (-) TimerEvent: {}
+[5.118971] (-) TimerEvent: {}
+[5.219386] (-) TimerEvent: {}
+[5.319800] (-) TimerEvent: {}
+[5.420212] (-) TimerEvent: {}
+[5.520626] (-) TimerEvent: {}
+[5.621043] (-) TimerEvent: {}
+[5.721457] (-) TimerEvent: {}
+[5.821871] (-) TimerEvent: {}
+[5.922287] (-) TimerEvent: {}
+[6.022704] (-) TimerEvent: {}
+[6.123126] (-) TimerEvent: {}
+[6.223544] (-) TimerEvent: {}
+[6.323961] (-) TimerEvent: {}
+[6.424379] (-) TimerEvent: {}
+[6.524793] (-) TimerEvent: {}
+[6.625216] (-) TimerEvent: {}
+[6.725644] (-) TimerEvent: {}
+[6.781656] (my_cpp_pkg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable number_counter\x1b[0m\n'}
+[6.825817] (-) TimerEvent: {}
+[6.926256] (-) TimerEvent: {}
+[7.026679] (-) TimerEvent: {}
+[7.114247] (my_cpp_pkg) StdoutLine: {'line': b'[100%] Built target number_counter\n'}
+[7.122954] (my_cpp_pkg) CommandEnded: {'returncode': 0}
+[7.126751] (-) TimerEvent: {}
+[7.146657] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'install'}
+[7.153292] (my_cpp_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/manoj/ros2_ws/build/my_cpp_pkg'], 'cwd': '/home/manoj/ros2_ws/build/my_cpp_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'manoj'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/manoj'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/manoj/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/manoj/.nvm/versions/node/v20.5.0/bin'), ('NVM_INC', '/home/manoj/.nvm/versions/node/v20.5.0/include/node'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge:appmenu-gtk-module'), ('MANAGERPID', '5324'), ('SYSTEMD_EXEC_PID', '5975'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '9030'), ('NVM_DIR', '/home/manoj/.nvm'), ('COLCON_PREFIX_PATH', '/home/manoj/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'manoj'), ('JOURNAL_STREAM', '8:30338'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'manoj'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/manoj/miniconda3/condabin:/home/manoj/.nvm/versions/node/v20.5.0/bin:/opt/ros/humble/bin:/home/manoj/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/manoj-ASUS-TUF-Gaming-A15-FA506IC-FA566IC:@/tmp/.ICE-unix/5760,unix/manoj-ASUS-TUF-Gaming-A15-FA506IC-FA566IC:/tmp/.ICE-unix/5760'), ('INVOCATION_ID', '8742a78428054e95b11b88cb628041ab'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/manoj/ros2_ws/install/my_py_pkg:/home/manoj/ros2_ws/install/my_cpp_pkg:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/manoj/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:532f74fe-606f-4b91-a7da-182fcd7476f7'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/manoj/ros2_ws/build/my_cpp_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/manoj/miniconda3/bin/conda'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/manoj/ros2_ws/build/my_py_pkg:/home/manoj/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/manoj/ros2_ws/install/my_cpp_pkg:/home/manoj/ros2_ws/install/my_py_pkg:/opt/ros/humble')]), 'shell': False}
+[7.159070] (my_cpp_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.159527] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/manoj/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/cpp_node\n'}
+[7.160002] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/manoj/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/robot_news_station\n'}
+[7.160479] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/manoj/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/smartphone\n'}
+[7.160967] (my_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/manoj/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/number_counter\n'}
+[7.164618] (my_cpp_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/manoj/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/number_counter" to ""\n'}
+[7.164903] (my_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/manoj/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/add_two_ints_server\n'}
+[7.165035] (my_cpp_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/manoj/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/add_two_ints_server" to ""\n'}
+[7.165143] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/manoj/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/package_run_dependencies/my_cpp_pkg\n'}
+[7.165248] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/manoj/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/parent_prefix_path/my_cpp_pkg\n'}
+[7.165351] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/manoj/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.sh\n'}
+[7.165453] (my_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/manoj/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.dsv\n'}
+[7.165557] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/manoj/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.sh\n'}
+[7.165718] (my_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/manoj/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.dsv\n'}
+[7.165848] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/manoj/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.bash\n'}
+[7.165936] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/manoj/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.sh\n'}
+[7.165988] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/manoj/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.zsh\n'}
+[7.166036] (my_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/manoj/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.dsv\n'}
+[7.166084] (my_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/manoj/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.dsv\n'}
+[7.166130] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/manoj/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/packages/my_cpp_pkg\n'}
+[7.166184] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/manoj/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig.cmake\n'}
+[7.166376] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/manoj/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig-version.cmake\n'}
+[7.166455] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/manoj/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.xml\n'}
+[7.167256] (my_cpp_pkg) CommandEnded: {'returncode': 0}
+[7.214898] (my_cpp_pkg) JobEnded: {'identifier': 'my_cpp_pkg', 'rc': 0}
+[7.215690] (-) EventReactorShutdown: {}

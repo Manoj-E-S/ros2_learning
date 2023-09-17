@@ -79,6 +79,55 @@ ________________________________________________________________________________
 
 6. To Debug use graphical interface by rqt:
    -> rqt (OR) rqt_graph : shows a list of all active nodes, and related topics they are interacting with
+   
+   
+7. ros2 cli for debugging and checking out various built-ins msg/srv/actions etc:
+   -> ros2 node <TAB><TAB>		: To know about different active nodes
+   -> ros2 interface <TAB><TAB>		: To know about different built-in (or custom-made) interfaces (msgs, srvs, etc.)
+   -> ros2 topic <TAB><TAB>		: To know about active topics
+   -> ros2 service <TAB><TAB>		: To know about active services
+   	
+   	** <TAB><TAB> 	= press the tab-key twice on the keyboard = lists all possible sub-commands (try and explore each sub-command and use them appropriately)
+   
+   
+   -> ros2 <xyz> list | grep <search_string>
+   
+   	** <xyz>	= a placeholder for the ros2 sub-commands
+   	** EXAMPLE COMMAND:	ros2 interface list | grep "example_interfaces/srv"
+   	** OUTPUT:		example_interfaces/srv/AddTwoInts
+    				example_interfaces/srv/SetBool
+    				example_interfaces/srv/Trigger
+   
+   	
+   -> ros2 sub-cmd-level1 sub-cmd-level2 ... sub-cmd-leveln --help	= Know the usage of the said command
+      EXAMPLE:	ros2 node info --help
+      		SHOWS that the given command has the following usage	: ros2 node info [-h] [--spin-time SPIN_TIME] [-s] [--no-daemon] [--include-hidden] node_name
+      NOTE: --help and -h are interchangeable. They are the same thing.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
