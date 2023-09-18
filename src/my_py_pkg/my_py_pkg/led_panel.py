@@ -25,6 +25,9 @@ class LedPanelNode(Node):
 
 
     def serviceCallback_set_led(self, request, response):
+
+        if request.led_index >= len(self.led_panel) or request.led_index < 0:
+            raise IndexError("LED index out of bound!")
         
         # Service Action
         self.led_panel[request.led_index] = request.state

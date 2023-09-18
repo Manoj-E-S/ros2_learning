@@ -45,7 +45,7 @@ ament_target_dependencies(add_two_ints_client rclcpp example_interfaces)
 add_executable(battery src/battery.cpp)
 ament_target_dependencies(battery rclcpp my_robot_interfaces)
 
-# Install executable in workspace/install
+# Install executable in workspace/install/lib/my_cpp_pkg
 install(
   TARGETS 
     cpp_node

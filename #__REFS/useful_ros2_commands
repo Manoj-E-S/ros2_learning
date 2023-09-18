@@ -86,6 +86,7 @@ ________________________________________________________________________________
    -> ros2 interface <TAB><TAB>		: To know about different built-in (or custom-made) interfaces (msgs, srvs, etc.)
    -> ros2 topic <TAB><TAB>		: To know about active topics
    -> ros2 service <TAB><TAB>		: To know about active services
+   -> ros2 param <TAB><TAB>		: To know about the various runtime parameters of all active nodes
    	
    	** <TAB><TAB> 	= press the tab-key twice on the keyboard = lists all possible sub-commands (try and explore each sub-command and use them appropriately)
    
