@@ -11,7 +11,11 @@ class LedPanelNode(Node):
     def __init__(self):
         super().__init__("led_panel")
 
-        self.led_panel = [False, False, False]
+        # Declare runtime params with default value
+        self.declare_parameter("init_led_panel_state", [False, False, False])
+
+        # Get runtime parameters
+        self.led_panel = self.get_parameter("init_led_panel_state").value
 
         self.led_panel_publisher_ = self.create_publisher(LedArrayStates, "led_panel_state", 10)
         self.set_led_server_ = self.create_service(TurnOnLed, "set_led", self.serviceCallback_set_led)
