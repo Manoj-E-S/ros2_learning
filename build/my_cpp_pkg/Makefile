@@ -288,6 +288,19 @@ add_two_ints_client/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/add_two_ints_client.dir/build.make CMakeFiles/add_two_ints_client.dir/build
 .PHONY : add_two_ints_client/fast
 
+#=============================================================================
+# Target rules for targets named battery
+
+# Build rule for target.
+battery: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 battery
+.PHONY : battery
+
+# fast build rule for target.
+battery/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/battery.dir/build.make CMakeFiles/battery.dir/build
+.PHONY : battery/fast
+
 src/add_two_ints_client.o: src/add_two_ints_client.cpp.o
 .PHONY : src/add_two_ints_client.o
 
@@ -359,6 +372,30 @@ src/add_two_ints_server.s: src/add_two_ints_server.cpp.s
 src/add_two_ints_server.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/add_two_ints_server.dir/build.make CMakeFiles/add_two_ints_server.dir/src/add_two_ints_server.cpp.s
 .PHONY : src/add_two_ints_server.cpp.s
+
+src/battery.o: src/battery.cpp.o
+.PHONY : src/battery.o
+
+# target to build an object file
+src/battery.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/battery.dir/build.make CMakeFiles/battery.dir/src/battery.cpp.o
+.PHONY : src/battery.cpp.o
+
+src/battery.i: src/battery.cpp.i
+.PHONY : src/battery.i
+
+# target to preprocess a source file
+src/battery.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/battery.dir/build.make CMakeFiles/battery.dir/src/battery.cpp.i
+.PHONY : src/battery.cpp.i
+
+src/battery.s: src/battery.cpp.s
+.PHONY : src/battery.s
+
+# target to generate assembly for a file
+src/battery.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/battery.dir/build.make CMakeFiles/battery.dir/src/battery.cpp.s
+.PHONY : src/battery.cpp.s
 
 src/my_first_node.o: src/my_first_node.cpp.o
 .PHONY : src/my_first_node.o
@@ -474,6 +511,7 @@ help:
 	@echo "... add_two_ints_client"
 	@echo "... add_two_ints_client_no_oop"
 	@echo "... add_two_ints_server"
+	@echo "... battery"
 	@echo "... cpp_node"
 	@echo "... number_counter"
 	@echo "... robot_news_station"
@@ -487,6 +525,9 @@ help:
 	@echo "... src/add_two_ints_server.o"
 	@echo "... src/add_two_ints_server.i"
 	@echo "... src/add_two_ints_server.s"
+	@echo "... src/battery.o"
+	@echo "... src/battery.i"
+	@echo "... src/battery.s"
 	@echo "... src/my_first_node.o"
 	@echo "... src/my_first_node.i"
 	@echo "... src/my_first_node.s"

@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from my_robot_interfaces/srv/TurnOnLed.srv
+// generated code does not contain a copyright notice
+
+
+module my_robot_interfaces {
+  module srv {
+    struct TurnOnLed_Request {
+      uint64 led_index;
+
+      boolean state;
+    };
+    struct TurnOnLed_Response {
+      boolean success;
+    };
+  };
+};

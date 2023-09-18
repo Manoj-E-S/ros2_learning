@@ -10,6 +10,7 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(example_interfaces REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(my_robot_interfaces REQUIRED)
 
 # Create executable for workspace/install
 # cpp_node
@@ -40,6 +41,10 @@ ament_target_dependencies(add_two_ints_client_no_oop rclcpp example_interfaces)
 add_executable(add_two_ints_client src/add_two_ints_client.cpp)
 ament_target_dependencies(add_two_ints_client rclcpp example_interfaces)
 
+# battery
+add_executable(battery src/battery.cpp)
+ament_target_dependencies(battery rclcpp my_robot_interfaces)
+
 # Install executable in workspace/install
 install(
   TARGETS 
@@ -50,6 +55,7 @@ install(
     add_two_ints_server
     add_two_ints_client_no_oop
     add_two_ints_client
+    battery
   DESTINATION lib/${PROJECT_NAME}
 )
 

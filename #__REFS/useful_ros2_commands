@@ -105,6 +105,39 @@ ________________________________________________________________________________
       NOTE: --help and -h are interchangeable. They are the same thing.
 
 
+8. To Create a msg-srv package:
+   -> Messages and services are kept in seperate packages in order to avoid import issues.
+   -> COMMAND: (in src directory of workspace)
+   	       - ros2 pkg create robot_name_interfaces
+   	       - cd robot_name_interfaces && rm -r include/ src/
+   	       - mkdir msg srv
+   -> PACKAGE SETUP - Refer to the comments in robot_name_interfaces/package.xml and robot_name_interfaces/CMakeLists.txt
+
+
+9. To create custom msgs:
+   -> in the msg directory make a new .msg file for each message type:
+      ```
+   	# These are comments
+   	# Non-primitive message type from different package
+   	other_interface_pkg/msg_type1 field1
+   	
+   	# Non-primitive message type from current package
+   	msg_type2 field2
+   	
+   	# Primitive data types
+   	primitive_type3 field3
+   	primitive_type4 field4
+      ```
+   	
+   -> refer ros2 github:
+      - example_interfaces - primitive msg-srv types
+      - common_msgs	   - commonly used non-primitive msg-srv types
+      
+   -> to download any msg-srv package: 
+      - sudo apt install ros-<distro>-<interface_package_name>
+      - (Eg) sudo apt install ros-humble-common_msgs
+   	       
+
 
 
 

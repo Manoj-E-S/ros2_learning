@@ -4,7 +4,8 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/opt/ros/humble/include/**"
+                "/opt/ros/humble/include/**", // for ROS2 Includes
+                "/home/manoj/ros2_ws/install/my_robot_interfaces/include/**" // for custom msg-srv includes
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",

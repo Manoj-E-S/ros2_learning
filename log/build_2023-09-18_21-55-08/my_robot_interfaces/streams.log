@@ -1,0 +1,269 @@
+[0.012s] Invoking command in '/home/manoj/ros2_ws/build/my_robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/manoj/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake /home/manoj/ros2_ws/src/my_robot_interfaces -DCMAKE_INSTALL_PREFIX=/home/manoj/ros2_ws/install/my_robot_interfaces
+[0.057s] -- The C compiler identification is GNU 11.4.0
+[0.100s] -- The CXX compiler identification is GNU 11.4.0
+[0.107s] -- Detecting C compiler ABI info
+[0.163s] -- Detecting C compiler ABI info - done
+[0.169s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.169s] -- Detecting C compile features
+[0.169s] -- Detecting C compile features - done
+[0.172s] -- Detecting CXX compiler ABI info
+[0.236s] -- Detecting CXX compiler ABI info - done
+[0.242s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.242s] -- Detecting CXX compile features
+[0.242s] -- Detecting CXX compile features - done
+[0.245s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.378s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.453s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.457s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.462s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.493s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.721s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.892s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.098s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.117s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[1.118s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.147s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[1.147s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.147s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.148s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.167s] -- Found PythonExtra: .so  
+[1.195s] -- Configuring done
+[1.215s] -- Generating done
+[1.217s] -- Build files have been written to: /home/manoj/ros2_ws/build/my_robot_interfaces
+[1.225s] Invoked command in '/home/manoj/ros2_ws/build/my_robot_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/manoj/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake /home/manoj/ros2_ws/src/my_robot_interfaces -DCMAKE_INSTALL_PREFIX=/home/manoj/ros2_ws/install/my_robot_interfaces
+[1.226s] Invoking command in '/home/manoj/ros2_ws/build/my_robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/manoj/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/manoj/ros2_ws/build/my_robot_interfaces -- -j16 -l16
+[1.257s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.266s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.273s] [  5%] Built target ament_cmake_python_copy_my_robot_interfaces
+[1.491s] running egg_info
+[1.491s] creating my_robot_interfaces.egg-info
+[1.491s] writing my_robot_interfaces.egg-info/PKG-INFO
+[1.492s] writing dependency_links to my_robot_interfaces.egg-info/dependency_links.txt
+[1.492s] writing top-level names to my_robot_interfaces.egg-info/top_level.txt
+[1.493s] writing manifest file 'my_robot_interfaces.egg-info/SOURCES.txt'
+[1.497s] reading manifest file 'my_robot_interfaces.egg-info/SOURCES.txt'
+[1.497s] writing manifest file 'my_robot_interfaces.egg-info/SOURCES.txt'
+[1.498s] [  5%] Built target my_robot_interfaces__cpp
+[1.507s] [ 12%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.507s] [ 12%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.507s] [ 12%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.515s] [ 17%] [32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_robot_interfaces/msg/detail/led_array_states__functions.c.o[0m
+[1.515s] [ 17%] [32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_robot_interfaces/srv/detail/turn_on_led__functions.c.o[0m
+[1.538s] [ 17%] Built target ament_cmake_python_build_my_robot_interfaces_egg
+[1.559s] [ 20%] [32m[1mLinking C shared library libmy_robot_interfaces__rosidl_generator_c.so[0m
+[1.588s] [ 20%] Built target my_robot_interfaces__rosidl_generator_c
+[1.595s] [ 25%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[1.595s] [ 25%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[1.597s] [ 28%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[1.716s] [ 33%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_robot_interfaces/msg/led_array_states__type_support.cpp.o[0m
+[1.716s] [ 33%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_robot_interfaces/srv/turn_on_led__type_support.cpp.o[0m
+[1.748s] [ 35%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_robot_interfaces/msg/detail/led_array_states__type_support.cpp.o[0m
+[1.750s] [ 38%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_robot_interfaces/srv/detail/turn_on_led__type_support.cpp.o[0m
+[1.763s] [ 41%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_robot_interfaces/msg/detail/dds_fastrtps/led_array_states__type_support.cpp.o[0m
+[1.766s] [ 43%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_robot_interfaces/srv/detail/dds_fastrtps/turn_on_led__type_support.cpp.o[0m
+[1.845s] [ 48%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_robot_interfaces/srv/turn_on_led__type_support.cpp.o[0m
+[1.845s] [ 48%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_robot_interfaces/msg/led_array_states__type_support.cpp.o[0m
+[1.865s] [ 53%] [32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_robot_interfaces/srv/detail/turn_on_led__type_support.c.o[0m
+[1.865s] [ 53%] [32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_robot_interfaces/msg/detail/led_array_states__type_support.c.o[0m
+[1.873s] [ 56%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_robot_interfaces/msg/detail/led_array_states__type_support_c.cpp.o[0m
+[1.875s] [ 58%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_robot_interfaces/srv/detail/turn_on_led__type_support_c.cpp.o[0m
+[1.883s] [ 61%] [32m[1mLinking CXX shared library libmy_robot_interfaces__rosidl_typesupport_c.so[0m
+[1.904s] [ 64%] [32m[1mLinking C shared library libmy_robot_interfaces__rosidl_typesupport_introspection_c.so[0m
+[1.934s] [ 64%] Built target my_robot_interfaces__rosidl_typesupport_c
+[1.935s] [ 64%] Built target my_robot_interfaces__rosidl_typesupport_introspection_c
+[1.965s] [ 66%] [32m[1mLinking CXX shared library libmy_robot_interfaces__rosidl_typesupport_cpp.so[0m
+[2.001s] [ 66%] Built target my_robot_interfaces__rosidl_typesupport_cpp
+[2.121s] [ 69%] [32m[1mLinking CXX shared library libmy_robot_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[2.132s] [ 71%] [32m[1mLinking CXX shared library libmy_robot_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[2.173s] [ 74%] [32m[1mLinking CXX shared library libmy_robot_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[2.213s] [ 74%] Built target my_robot_interfaces__rosidl_typesupport_fastrtps_cpp
+[2.221s] [ 74%] Built target my_robot_interfaces__rosidl_typesupport_introspection_cpp
+[2.254s] [ 74%] Built target my_robot_interfaces__rosidl_typesupport_fastrtps_c
+[2.270s] [ 74%] Built target my_robot_interfaces
+[2.287s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[2.608s] [ 76%] Built target my_robot_interfaces__py
+[2.623s] [ 82%] [32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_robot_interfaces/msg/_led_array_states_s.c.o[0m
+[2.623s] [ 82%] [32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_robot_interfaces/srv/_turn_on_led_s.c.o[0m
+[2.698s] [ 84%] [32m[1mLinking C shared library rosidl_generator_py/my_robot_interfaces/libmy_robot_interfaces__rosidl_generator_py.so[0m
+[2.727s] [ 84%] Built target my_robot_interfaces__rosidl_generator_py
+[2.744s] [ 87%] [32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[2.744s] [ 92%] [32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[2.744s] [ 92%] [32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[2.813s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.815s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.818s] [100%] [32m[1mLinking C shared library rosidl_generator_py/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.840s] [100%] Built target my_robot_interfaces__rosidl_typesupport_c__pyext
+[2.840s] [100%] Built target my_robot_interfaces__rosidl_typesupport_introspection_c__pyext
+[2.845s] [100%] Built target my_robot_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[2.854s] Invoked command in '/home/manoj/ros2_ws/build/my_robot_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/manoj/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/manoj/ros2_ws/build/my_robot_interfaces -- -j16 -l16
+[2.914s] Invoking command in '/home/manoj/ros2_ws/build/my_robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/manoj/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/manoj/ros2_ws/build/my_robot_interfaces
+[2.920s] -- Install configuration: ""
+[2.920s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/share/ament_index/resource_index/rosidl_interfaces/my_robot_interfaces
+[2.921s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces
+[2.921s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg
+[2.921s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail
+[2.921s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/led_array_states__functions.h
+[2.921s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/led_array_states__functions.c
+[2.921s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/led_array_states__type_support.h
+[2.921s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/led_array_states__struct.h
+[2.921s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/rosidl_generator_c__visibility_control.h
+[2.921s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/led_array_states.h
+[2.922s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv
+[2.922s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail
+[2.922s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/turn_on_led__type_support.h
+[2.922s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/turn_on_led__functions.h
+[2.922s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/turn_on_led__functions.c
+[2.922s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/turn_on_led__struct.h
+[2.922s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/turn_on_led.h
+[2.922s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/library_path.sh
+[2.922s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/library_path.dsv
+[2.922s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_generator_c.so
+[2.922s] -- Set runtime path of "/home/manoj/ros2_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_generator_c.so" to ""
+[2.923s] -- Up-to-date: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces
+[2.923s] -- Up-to-date: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg
+[2.923s] -- Up-to-date: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail
+[2.923s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/led_array_states__rosidl_typesupport_fastrtps_c.h
+[2.923s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[2.923s] -- Up-to-date: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv
+[2.923s] -- Up-to-date: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail
+[2.923s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/turn_on_led__rosidl_typesupport_fastrtps_c.h
+[2.923s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_fastrtps_c.so
+[2.923s] -- Set runtime path of "/home/manoj/ros2_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[2.923s] -- Up-to-date: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces
+[2.923s] -- Up-to-date: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg
+[2.923s] -- Up-to-date: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail
+[2.923s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/led_array_states__type_support.c
+[2.923s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/led_array_states__rosidl_typesupport_introspection_c.h
+[2.923s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[2.923s] -- Up-to-date: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv
+[2.924s] -- Up-to-date: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail
+[2.924s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/turn_on_led__rosidl_typesupport_introspection_c.h
+[2.924s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/turn_on_led__type_support.c
+[2.924s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_introspection_c.so
+[2.924s] -- Set runtime path of "/home/manoj/ros2_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[2.924s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_c.so
+[2.924s] -- Set runtime path of "/home/manoj/ros2_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_c.so" to ""
+[2.924s] -- Up-to-date: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces
+[2.924s] -- Up-to-date: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg
+[2.924s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/led_array_states.hpp
+[2.924s] -- Up-to-date: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail
+[2.924s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/led_array_states__builder.hpp
+[2.924s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/led_array_states__traits.hpp
+[2.924s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/led_array_states__struct.hpp
+[2.924s] -- Up-to-date: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv
+[2.924s] -- Up-to-date: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail
+[2.924s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/turn_on_led__traits.hpp
+[2.925s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/turn_on_led__builder.hpp
+[2.925s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/turn_on_led__struct.hpp
+[2.925s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/turn_on_led.hpp
+[2.925s] -- Up-to-date: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces
+[2.925s] -- Up-to-date: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg
+[2.925s] -- Up-to-date: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail
+[2.925s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/dds_fastrtps
+[2.925s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/led_array_states__rosidl_typesupport_fastrtps_cpp.hpp
+[2.925s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[2.925s] -- Up-to-date: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv
+[2.925s] -- Up-to-date: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail
+[2.925s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/turn_on_led__rosidl_typesupport_fastrtps_cpp.hpp
+[2.925s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/dds_fastrtps
+[2.925s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[2.925s] -- Set runtime path of "/home/manoj/ros2_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[2.925s] -- Up-to-date: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces
+[2.925s] -- Up-to-date: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg
+[2.926s] -- Up-to-date: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail
+[2.926s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/led_array_states__type_support.cpp
+[2.926s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/led_array_states__rosidl_typesupport_introspection_cpp.hpp
+[2.926s] -- Up-to-date: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv
+[2.926s] -- Up-to-date: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail
+[2.926s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/turn_on_led__type_support.cpp
+[2.926s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/turn_on_led__rosidl_typesupport_introspection_cpp.hpp
+[2.926s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_introspection_cpp.so
+[2.926s] -- Set runtime path of "/home/manoj/ros2_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[2.926s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_cpp.so
+[2.926s] -- Set runtime path of "/home/manoj/ros2_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_cpp.so" to ""
+[2.926s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/pythonpath.sh
+[2.926s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/pythonpath.dsv
+[2.926s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces-0.0.0-py3.10.egg-info
+[2.926s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[2.926s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[2.926s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[2.927s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[2.927s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces
+[2.927s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.927s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[2.927s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_c.c
+[2.927s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/__init__.py
+[2.927s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/msg
+[2.927s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/msg/_led_array_states_s.c
+[2.927s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/msg/_led_array_states.py
+[2.927s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/msg/__init__.py
+[2.927s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.927s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[2.927s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.927s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/libmy_robot_interfaces__rosidl_generator_py.so
+[2.927s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/srv
+[2.927s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/srv/_turn_on_led_s.c
+[2.927s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/srv/_turn_on_led.py
+[2.927s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/srv/__init__.py
+[2.953s] Listing '/home/manoj/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces'...
+[2.953s] Compiling '/home/manoj/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/__init__.py'...
+[2.953s] Listing '/home/manoj/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/msg'...
+[2.954s] Compiling '/home/manoj/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/msg/__init__.py'...
+[2.954s] Compiling '/home/manoj/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/msg/_led_array_states.py'...
+[2.954s] Listing '/home/manoj/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/srv'...
+[2.954s] Compiling '/home/manoj/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/srv/__init__.py'...
+[2.954s] Compiling '/home/manoj/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/srv/_turn_on_led.py'...
+[2.957s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.957s] -- Set runtime path of "/home/manoj/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[2.957s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.957s] -- Set runtime path of "/home/manoj/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[2.958s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.958s] -- Set runtime path of "/home/manoj/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[2.958s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_generator_py.so
+[2.958s] -- Set runtime path of "/home/manoj/ros2_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_generator_py.so" to ""
+[2.958s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/msg/LedArrayStates.idl
+[2.958s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/srv/TurnOnLed.idl
+[2.959s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/msg/LedArrayStates.msg
+[2.959s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/srv/TurnOnLed.srv
+[2.959s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/srv/TurnOnLed_Request.msg
+[2.959s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/srv/TurnOnLed_Response.msg
+[2.959s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/share/ament_index/resource_index/package_run_dependencies/my_robot_interfaces
+[2.959s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/share/ament_index/resource_index/parent_prefix_path/my_robot_interfaces
+[2.959s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/ament_prefix_path.sh
+[2.959s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/ament_prefix_path.dsv
+[2.959s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/path.sh
+[2.959s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/path.dsv
+[2.960s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/local_setup.bash
+[2.960s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/local_setup.sh
+[2.960s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/local_setup.zsh
+[2.960s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/local_setup.dsv
+[2.960s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/package.dsv
+[2.960s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/share/ament_index/resource_index/packages/my_robot_interfaces
+[2.960s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_generator_cExport.cmake
+[2.960s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_generator_cExport-noconfig.cmake
+[2.960s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[2.960s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[2.960s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[2.960s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[2.960s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_cExport.cmake
+[2.960s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[2.961s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_generator_cppExport.cmake
+[2.961s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[2.961s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[2.961s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[2.961s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[2.961s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_cppExport.cmake
+[2.961s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[2.961s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_generator_pyExport.cmake
+[2.961s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[2.961s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/rosidl_cmake-extras.cmake
+[2.961s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.961s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[2.962s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[2.962s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[2.962s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.962s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[2.962s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfacesConfig.cmake
+[2.962s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfacesConfig-version.cmake
+[2.962s] -- Installing: /home/manoj/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/package.xml
+[2.964s] Invoked command in '/home/manoj/ros2_ws/build/my_robot_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/manoj/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/manoj/ros2_ws/build/my_robot_interfaces
