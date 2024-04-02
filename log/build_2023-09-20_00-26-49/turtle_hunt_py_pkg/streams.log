@@ -1,0 +1,18 @@
+[0.550s] Invoking command in '/home/manoj/ros2_ws/build/turtle_hunt_py_pkg': PYTHONPATH=/home/manoj/ros2_ws/build/turtle_hunt_py_pkg/prefix_override:/home/manoj/ros2_ws/install/turtle_hunt_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/manoj/ros2_ws/build/turtle_hunt_py_pkg/build --no-deps install_data
+[0.766s] running develop
+[0.906s] running egg_info
+[0.906s] writing turtle_hunt_py_pkg.egg-info/PKG-INFO
+[0.907s] writing dependency_links to turtle_hunt_py_pkg.egg-info/dependency_links.txt
+[0.907s] writing entry points to turtle_hunt_py_pkg.egg-info/entry_points.txt
+[0.907s] writing requirements to turtle_hunt_py_pkg.egg-info/requires.txt
+[0.907s] writing top-level names to turtle_hunt_py_pkg.egg-info/top_level.txt
+[0.908s] reading manifest file 'turtle_hunt_py_pkg.egg-info/SOURCES.txt'
+[0.909s] writing manifest file 'turtle_hunt_py_pkg.egg-info/SOURCES.txt'
+[0.910s] running build_ext
+[0.910s] Creating /home/manoj/ros2_ws/install/turtle_hunt_py_pkg/lib/python3.10/site-packages/turtle-hunt-py-pkg.egg-link (link to .)
+[0.911s] Installing turtle1_controller script to /home/manoj/ros2_ws/install/turtle_hunt_py_pkg/lib/turtle_hunt_py_pkg
+[0.911s] Installing turtle_spawner script to /home/manoj/ros2_ws/install/turtle_hunt_py_pkg/lib/turtle_hunt_py_pkg
+[0.911s] 
+[0.911s] Installed /home/manoj/ros2_ws/build/turtle_hunt_py_pkg
+[0.911s] running install_data
+[0.949s] Invoked command in '/home/manoj/ros2_ws/build/turtle_hunt_py_pkg' returned '0': PYTHONPATH=/home/manoj/ros2_ws/build/turtle_hunt_py_pkg/prefix_override:/home/manoj/ros2_ws/install/turtle_hunt_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/manoj/ros2_ws/build/turtle_hunt_py_pkg/build --no-deps install_data

@@ -1,0 +1,4 @@
+[console_scripts]
+turtle1_controller = turtle_hunt_py_pkg.turtle1_controller:main
+turtle_spawner = turtle_hunt_py_pkg.turtle_spawner:main
+

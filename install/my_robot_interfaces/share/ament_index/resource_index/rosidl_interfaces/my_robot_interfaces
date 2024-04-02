@@ -1,5 +1,9 @@
 msg/LedArrayStates.idl
 msg/LedArrayStates.msg
+msg/Turtle.idl
+msg/Turtle.msg
+msg/TurtleArray.idl
+msg/TurtleArray.msg
 srv/TurnOnLed.idl
 srv/TurnOnLed.srv
 srv/TurnOnLed_Request.msg

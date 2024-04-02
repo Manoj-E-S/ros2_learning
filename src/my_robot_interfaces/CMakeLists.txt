@@ -14,6 +14,8 @@ find_package(rosidl_default_generators REQUIRED)
 rosidl_generate_interfaces(
   ${PROJECT_NAME}
   "msg/LedArrayStates.msg"
+  "msg/Turtle.msg"
+  "msg/TurtleArray.msg"
   "srv/TurnOnLed.srv"
 )
 

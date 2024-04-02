@@ -247,10 +247,21 @@ CMakeFiles/my_robot_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator
   rosidl_generator_c/my_robot_interfaces/msg/detail/led_array_states__struct.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
   rosidl_generator_c/my_robot_interfaces/msg/detail/led_array_states__functions.h \
+  rosidl_generator_c/my_robot_interfaces/msg/detail/turtle_point_dist__type_support.h \
+  rosidl_generator_c/my_robot_interfaces/msg/detail/turtle_point_dist__struct.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
+  rosidl_generator_c/my_robot_interfaces/msg/detail/turtle_point_dist__functions.h \
+  rosidl_generator_c/my_robot_interfaces/msg/detail/turtle_position_array__type_support.h \
+  rosidl_generator_c/my_robot_interfaces/msg/detail/turtle_position_array__struct.h \
+  rosidl_generator_c/my_robot_interfaces/msg/detail/turtle_position_array__functions.h \
   rosidl_generator_c/my_robot_interfaces/srv/detail/turn_on_led__type_support.h \
   rosidl_generator_c/my_robot_interfaces/srv/detail/turn_on_led__struct.h \
   rosidl_generator_c/my_robot_interfaces/srv/detail/turn_on_led__functions.h
 
+
+rosidl_generator_c/my_robot_interfaces/msg/detail/turtle_position_array__struct.h:
+
+/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h:
 
 rosidl_generator_c/my_robot_interfaces/msg/detail/led_array_states__struct.h:
 
@@ -303,6 +314,8 @@ rosidl_generator_c/my_robot_interfaces/srv/detail/turn_on_led__struct.h:
 /usr/include/python3.10/pythonrun.h:
 
 /usr/include/python3.10/abstract.h:
+
+rosidl_generator_c/my_robot_interfaces/msg/detail/turtle_position_array__type_support.h:
 
 /usr/include/python3.10/cpython/pylifecycle.h:
 
@@ -382,6 +395,8 @@ rosidl_generator_c/my_robot_interfaces/srv/detail/turn_on_led__functions.h:
 
 /usr/include/python3.10/exports.h:
 
+rosidl_generator_c/my_robot_interfaces/msg/detail/turtle_position_array__functions.h:
+
 /usr/include/python3.10/fileobject.h:
 
 /usr/include/x86_64-linux-gnu/bits/statx-generic.h:
@@ -399,6 +414,8 @@ rosidl_generator_c/my_robot_interfaces/srv/detail/turn_on_led__functions.h:
 /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
+
+rosidl_generator_c/my_robot_interfaces/msg/detail/turtle_point_dist__type_support.h:
 
 /usr/include/asm-generic/errno.h:
 
@@ -467,6 +484,8 @@ rosidl_generator_c/my_robot_interfaces/srv/detail/turn_on_led__functions.h:
 /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
+
+rosidl_generator_c/my_robot_interfaces/msg/detail/turtle_point_dist__functions.h:
 
 /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
 
@@ -699,6 +718,8 @@ rosidl_generator_c/my_robot_interfaces/srv/detail/turn_on_led__type_support.h:
 /usr/include/x86_64-linux-gnu/bits/math-vector.h:
 
 /usr/include/time.h:
+
+rosidl_generator_c/my_robot_interfaces/msg/detail/turtle_point_dist__struct.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/error_t.h:
 

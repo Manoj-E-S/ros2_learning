@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from my_robot_interfaces/msg/TurtlePointDist.msg
+// generated code does not contain a copyright notice
+
+
+module my_robot_interfaces {
+  module msg {
+    struct TurtlePointDist {
+      @default (value="")
+      string turtle_name;
+
+      @default (value=-1.0)
+      double x;
+
+      @default (value=-1.0)
+      double y;
+
+      @default (value=-1.0)
+      double distance;
+    };
+  };
+};

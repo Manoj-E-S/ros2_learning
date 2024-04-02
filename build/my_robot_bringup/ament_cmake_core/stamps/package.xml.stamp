@@ -13,6 +13,7 @@
   <!-- START -->
   <exec_depend>my_py_pkg</exec_depend>
   <exec_depend>my_cpp_pkg</exec_depend>
+  <exec_depend>turtle_hunt_py_pkg</exec_depend>
   <!-- END -->
 
   <test_depend>ament_lint_auto</test_depend>
